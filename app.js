@@ -3,6 +3,9 @@ const app = express();
 const port = 3000;
 const { engine } = require("express-handlebars");
 
+// Import other js fils
+const generatePassword = require("./public/javascripts/generatePassword");
+
 app.use(express.static("public"));
 app.engine(".hbs", engine({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
@@ -16,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  console.log(req.body);
+  console.log(`The password is ${generatePassword(req.body)}`);
   res.render("index");
 });
 
