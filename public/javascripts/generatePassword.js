@@ -1,7 +1,7 @@
 // create password element collection
 let collection = [];
 
-// get what users picked
+// get what users picked -> update the collection array
 function updateCollection(options, type, start, end) {
   switch (options[type]) {
     case "on":

@@ -19,8 +19,8 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  console.log(`The password is ${generatePassword(req.body)}`);
-  res.render("index");
+  const password = generatePassword(req.body);
+  res.render("index", { password });
 });
 
 app.listen(port, () => {
