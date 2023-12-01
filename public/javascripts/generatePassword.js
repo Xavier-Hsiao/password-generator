@@ -43,6 +43,11 @@ function generatePassword(options) {
     });
   }
 
+  // Error handling: if there is no characters in collection
+  if (!collection.length) {
+    return "There is no valid characters in your selection 🫠"
+  }
+
   // get password result
   for (let i = 0; i < options.length; i++) {
     password += sample(collection);
