@@ -16,6 +16,8 @@ This is a simple web app to generate a random password depending on user options
 
 ## Screenshots
 
+[screenshot1](https://github.com/Xavier-Hsiao/password-generator/blob/master/public/screeshots/password-generator1.png)
+
 ## Installation
 1. Clone the project using the command below.
 
