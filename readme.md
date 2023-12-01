@@ -51,6 +51,7 @@ If the server manages to run you will see this line in your console: `The server
 - Express
 - Express-handlebars
 - Font awesome
+- Bootstrap
 
 ## Contributor
 
